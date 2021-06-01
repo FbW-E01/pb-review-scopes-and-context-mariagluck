@@ -41,9 +41,10 @@
 // ![image](https://user-images.githubusercontent.com/635732/120242400-13868300-c265-11eb-9c0e-2047bf59345d.png)
 
 
-// By calling function a() it will print "HELLO WORLD" because it will execute the console.log(test) that prints the variable const test, declared within the scope of the function. In the contrary, when we think about functions b() and c() they will not be printed, because b(), is calling a function from outside its local scope, so it cannot access it, it has forgotten it and goes forward to print console.log(test). c() is even highlighted in light grey as it has not even been called anywhere. So variable best would be forgotten and c() would not be executed either UNLESS we call c() right next to console.log(test), in this case it would print : 
+// By calling function a() it will print "HELLO WORLD" because it will execute the console.log(test) that prints the variable const test, declared within the scope of the function. In the contrary, when we think about functions b() and c() they will not be printed, because b(), is calling a function from outside its local scope, so it cannot access it, it has forgotten it and goes forward to print console.log(test). c() has not even been called anywhere. So variable const best would be forgotten and c() would not be executed either --> UNLESS --> we call c() right next to console.log(test), in this case it would print : 
 // HELLO WORLD!
 // HELLO WORLD! WE ARE THE BEST
+
 //like this e.g.
 // function a() {
 //     const test = "HELLO WORLD!";
